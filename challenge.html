@@ -12,8 +12,9 @@
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/challenge.css" />
 
     <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -27,72 +28,15 @@
                 </div>
 
                 <div class="col">
-                    <h1>NuCamp</h1>
-                    <h2>a better way to camp</h2>
+                    <h1 style="color: peru;">NuCamp</h1>
+                    <h2 style="color: gold;">a better way to camp</h2>
                 </div>
                     <div class="col-md-4 col-xl-2">
-                        <a class="btn btn-lg btn-info mt-4 text-nowrap" href="#reserveModal" role="button" data-toggle="modal" data-html="true">Reserve Campsite</a>
+                        <a class="btn btn-lg btn-outline-warning mt-4 text-nowrap" href="#reserveForm" role="button" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Or Call Us At <br /><strong> 1-206 555 1234</strong>">Reserve Campsite</a>
                     </div>
             </div>
         </div>
     </header>
-
-      
-        <div id="reserveModal" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header bg-info text-white">
-                        <h3 class="modal-title ">Reserve a Campsite</h3>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="reserveForm">
-                            <div class="row form-group">
-                                <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
-                                    <div class="col">
-                                <select class="form-control" name="" id="numCampers">
-                                    <option value="Select">Select...</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                </select>
-                                    </div>
-                            </div>
-                            <div class="row  form-group">
-                                <label class="col-sm-6 col-form-label" for="date" >Date</label>
-                                <div class="col">
-                                <input class="form-control" type="date" id="date" name="date" placeholder="Date">
-                                </div>
-                            </div>
-
-                            <div class="row form-group">
-                                <label class="col-sm-6 col-form-label" for="">Campsite Type</label>
-                                <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-success    active">
-                                        <input type="radio" value="tent" id="siteTent" autocomplete="off" checked>Tent
-                                      </label>
-                                    <label class="btn btn-primary">
-                                        <input type="radio" value="RV" id="siteRV" autocomplete="off" checked>RV</label>
-                                    </div>
-                            </div>
-                            
-                            <div class="row form-group">
-                                <div class="col">
-                                    <button type="button" class="btn btn-secondary ml-auto" data-dismiss="modal">Cancel</button>
-                                    <button class="btn btn-primary" type="submit">Search</button>
-
-                                </div>
-
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
@@ -169,7 +113,7 @@
                             <img class="d-block w-100" src="img/breadcrumb-trail.jpg" alt="Breadcrumb Trail Campground" />
                             <div class="carousel-caption">
                                 <h3>Breadcrumb Trail Campground</h3>
-                                <p class="d-none d-sm-block">Let Nucamp be your guide to this off-the-beaten-path, hike-in-only campground.</p>
+                                <p class="d-none d-sm-block" style="color: chartreuse;">Let Nucamp be your guide to this off-the-beaten-path, hike-in-only campground.</p>
                             </div>
 
                         </div>
@@ -177,7 +121,7 @@
                             <img class="d-block w-100" src="img/react-lake.jpg" alt="React Lake Campground" />
                             <div class="carousel-caption">
                                 <h3>Breadcrumb Trail Campground</h3>
-                                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                                <p class="d-none d-sm-block" style="color: chartreuse;">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
                             </div>
 
                         </div>
@@ -185,7 +129,7 @@
                             <img class="d-block w-100" src="img/chrome-river.jpg" alt="Chrome River Campground" />
                             <div class="carousel-caption">
                                 <h3>Breadcrumb Trail Campground</h3>
-                                <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River.</p>
+                                <p class="d-none d-sm-block" style="color: chartreuse;">Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River.</p>
                             </div>
                         </div>
                     </div>
@@ -255,8 +199,8 @@
             <div class="row row-content align-self-center">
                 <div class="col col-sm-6 mx-auto">
                     <div class="card">
-                        <h3 class="card-header bg-info text-white">Reserve a Camp</h3>
-                        <div class="card-body">
+                        <h3 class="card-header bg-warning">Reserve a Camp</h3>
+                        <div class="card-body" style="background-color:salmon;" >
                             <form id="reserveForm">
                                 <div class="row form-group">
                                     <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
@@ -323,7 +267,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
 
 </html>
